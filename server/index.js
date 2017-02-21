@@ -12,7 +12,7 @@ mongoose.connect('mongodb://localhost:bucket/bucket');
 app.use(bodyParser.json({ type: '*/*'}));
 router(app);
 
-var port = process.env.PORT || 3000;
+var port = 3000;
 
 var server = http.createServer(app);
 
